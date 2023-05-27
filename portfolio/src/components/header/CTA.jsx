@@ -1,11 +1,10 @@
 import React from 'react'
-// import CV from '.././../assets/Djomo Resume new.docx.pdf'
 const CTA = () => {
 return (
    <div className='cta'>
-      {/* <a href={CV} download className='btn'>Download CV</a> */}
-      <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+      <a href="https://profile.indeed.com/p/mbishuf-n4btzmj" download className='btn'>Resume</a>
+      <a href="#contact" className='btn btn-primary'>work with me</a>
    </div>
 )
 }
-export default CTA ; //this line indicates that this component can be imported and usedeverywhere in our application.
+export default CTA ; 
