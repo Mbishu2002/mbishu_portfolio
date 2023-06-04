@@ -3,8 +3,8 @@ import axios from 'axios';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Testimonial.css';
-import API from './url';
+import './Testimonials.css';
+import API from '../../url/api.json';
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);

@@ -4,8 +4,8 @@ import Navbar from './components/navbar/navbar'
 import About from './components/about/about'
 import Experience from './components/Experience/experience'
 import Services from './components/services/services'
-// import Portfolio from './components/portfolio/portfolio'
-// import Testimonial from './components/Testimonials/Testimonials'
+import Portfolio from './components/portfolio/portfolio'
+import Testimonial from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/contact'
 import Footer from './components/footer/footer'
 function App() {
@@ -17,8 +17,8 @@ return (
     <About/>
     <Experience/>
     <Services/>
-    {/* <Portfolio/>
-    <Testimonial/> */}
+    <Portfolio/>
+    <Testimonial/>
     <Contact/>
     <Footer/>
   </>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './portfolio.css';
-import API from './urls';
+import API from '../../url/api.json';
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
