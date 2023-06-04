@@ -3,7 +3,7 @@ import Header from './components/header/Header'
 import Navbar from './components/navbar/navbar'
 import About from './components/about/about'
 import Experience from './components/Experience/experience'
-// import Services from './components/services/services'
+import Services from './components/services/services'
 // import Portfolio from './components/portfolio/portfolio'
 // import Testimonial from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/contact'
@@ -16,7 +16,7 @@ return (
     <Navbar/>
     <About/>
     <Experience/>
-    {/* <Services/> */}
+    <Services/>
     {/* <Portfolio/>
     <Testimonial/> */}
     <Contact/>

@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Testimonial.css';
+import API from './url';
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
@@ -14,7 +15,7 @@ const Testimonials = () => {
 
   const fetchTestimonials = async () => {
     try {
-      const response = await axios.get('your-backend-api-endpoint');
+      const response = await axios.get(API.testimonials);
       setTestimonials(response.data);
     } catch (error) {
       console.error('Error fetching testimonials:', error);

@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import testimonial
+from .models import Testimonial
 
 # Register your models here.
 
-admin.register(testimonial)
+admin.register(Testimonial)

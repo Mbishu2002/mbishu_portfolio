@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import *
+from .views import testimonial_list
+
 urlpatterns = [
-    path('<id>',testimonial, name='testimonial')
+    path('testimonials/', testimonial_list, name='testimonial-list'),
 ]

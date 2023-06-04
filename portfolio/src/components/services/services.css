@@ -35,7 +35,7 @@
   
   .service__title {
     font-size: 18px;
-    color: var(--color-text);
+    color:black;
   }
   
   /* Media query for responsive design */
