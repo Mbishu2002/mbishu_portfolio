@@ -1,71 +1,74 @@
-header{
-    height: 100vh; /*vh correspond to viewport height*/
+header {
+    height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
-    }
-    .header__container{
+  }
+  
+  .header__container {
     height: 100%;
-    text-align: left;
+    text-align: center; /* Align the content to the center */
     position: relative;
-    left:15%;
-    }
-    .cta{
+    left: 50%;
+    transform: translateX(-50%); /* Center the container horizontally */
+  }
+  
+  .cta {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
-    justify-content: left;
-    left:15%;
-}
-.header__social {
+    justify-content: center; /* Align the buttons to the center */
+  }
+  
+  .header__social {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    left: 0;
-    top: 24px;
-    left: calc(10% - 11rem);
-    /* margin-top: 24px; Adjust the margin-top to match the height of the image */
-    bottom: 3rem;
-  }  
-.header__social::after{ /*the after tag help us to draw the vertical line we have
-after the social icons*/
+    left: 2rem;
+    top: 2rem;
+  }
+  
+  .header__social::after {
     content: '';
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
-}
-.my_image {
+  }
+  
+  .my_image {
     width: 22rem;
-    height: 20rem;
-    position: absolute;
-    left: calc(10% - 11rem);
+    height: 22rem;
+    position: relative;
     margin-top: 2rem;
-    border-radius: 50%; /* Make the element a circle */
+    border-radius: 50%;
     overflow: hidden;
-    padding: 0rem 1.5rem 1.5rem 1.5rem;
-}
-
-.scroll__down{
+    padding: 0.5rem;
+  }
+  
+  .scroll__down {
     position: absolute;
     right: -2rem;
     bottom: 5rem;
     transform: rotate(90deg);
+    font-size: 0.9rem;
     font-weight: 300;
-    font-weight: 0.9rem;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1024px) {
+    header {
+      height: 68vh;
     }
-    /*This is what we call media query: here we define the css that will be apply for a
-    specific screen*/
-@media screen and(max-width:1024px) {
-   header{
-     height:68vh;
-   }
-}
-@media screen and(max-width:600px) {
-    header{
-    height:100vh
+  }
+  
+  @media screen and (max-width: 600px) {
+    header {
+      height: 100vh;
     }
-    .header__social, .scroll__down{
-    display: none;
+    .header__social,
+    .scroll__down {
+      display: none;
     }
-}
+  }
+  
