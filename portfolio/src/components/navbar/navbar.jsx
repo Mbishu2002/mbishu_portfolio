@@ -1,33 +1,21 @@
-import React from 'react';
-import './navbar.css';
+import React from "react";
+import "./navbar.css";
+import {MdHome ,MdPerson ,MdOutlineComputer,MdOutlineChatBubbleOutline, MdOutlineHeartBroken} from 'react-icons/md'
+ function Navbar(){
 
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <div className="navbar__container">
-        <ul className="navbar__menu">
-          <li className="navbar__item">
-            <a href="#header" className="navbar__link">Home</a>
-          </li>
-          <li className="navbar__item">
-            <a href="#about" className="navbar__link">About</a>
-          </li>
-          <li className="navbar__item">
-            <a href="#portfolio" className="navbar__link">Portfolio</a>
-          </li>
-          <li className="navbar__item">
-            <a href="#services" className="navbar__link">Services</a>
-          </li>
-          <li className="navbar__item">
-            <a href="#experience" className="navbar__link">Experience</a>
-          </li>
-          <li className="navbar__item">
-            <a href="#contact" className="navbar__link">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-};
+    return(
+        
+<div className="navBar">
+    <div id="navItems">
+<ul>  
+    <li id="home"><div className="two"><a href="#home" > <MdHome /></a></div></li>
+    <li> <div className="two"> <a href="#about">  <MdPerson /></a> </div></li>
+    <li>  <div className="two"><a href="#portfolio">    <MdOutlineComputer /></a> </div></li>
+    <li>  <div className="two"><a  href="#testimonial"> <MdOutlineHeartBroken /></a> </div></li>
+    <li id="letTalk">  <div className="two"><a href="#contact"> <MdOutlineChatBubbleOutline/></a> </div></li>
+</ul>
+</div></div>
+    );
+}
 
-export default Navbar;
+export default Navbar; 

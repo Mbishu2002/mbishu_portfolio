@@ -21,15 +21,15 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio">
-      <h3>Portfolio</h3>
+      <h3 className="portfolio-title">Portfolio</h3>
       <div className="card-container">
         {projects.map((project) => (
           <div className="card" key={project.id}>
-            <img src={project.previewImage} alt={project.title} className="card__image" />
-            <div className="card__content">
-              <h4>{project.title}</h4>
-              <p>{project.description}</p>
-              <div className="card__links">
+            <img src={project.previewImage} alt={project.title} className="card-image" />
+            <div className="card-content">
+              <h4 className="card-title">{project.title}</h4>
+              <p className="card-description">{project.description}</p>
+              <div className="card-links">
                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                   GitHub
                 </a>

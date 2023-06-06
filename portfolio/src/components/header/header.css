@@ -1,26 +1,27 @@
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-}
+  background-color: red;
+  display: flex;
+} */
 
-header {
+/* header {
   background-color: #0077B5;
   color: #fff;
   height: 400px;
-  display: flex;
-  flex-direction: column;
+
   align-items: center;
   justify-content: center;
-}
+} */
 
 .my_image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 450px;
+  height: 350px;
   overflow: hidden;
   margin-bottom: 1.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+  
 }
 
 .my_image img {
@@ -30,26 +31,31 @@ header {
 }
 
 .header__container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
+  display: flex;
 }
 
 .header__content {
-  margin-bottom: 1.5rem;
+  margin-top: 0.5rems;
+  margin-bottom: 1rem;
 }
-
 .header__content h3,
 .header__content h1 {
   margin: 0;
   font-weight: 700;
-  color: #fff;
+  color: #333;
 }
 
 .header__content h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+}
+.header__container #leftHeader {
+  margin-top: 130px;
+}
+.header__container #leftHeader .header__content{
+  margin-left: 150px;
 }
 
 .header__content h1 {
@@ -58,7 +64,7 @@ header {
 }
 
 .text-light {
-  color: #ccc;
+  color: black;
   font-weight: 400;
   margin-bottom: 2rem;
 }
@@ -75,7 +81,7 @@ header {
 }
 
 .scroll__down {
-  color: #ccc;
+  color: black;
   font-size: 0.9rem;
   font-weight: 300;
   writing-mode: vertical-rl;
@@ -109,4 +115,14 @@ header {
   .text-light {
     font-size: 0.9rem;
   }
+}
+.cta  #lest{
+  background-color: black;
+  color:white;
+margin-left:20px
+}
+.cta #download{
+  border: 2px solid black;
+  color:black;
+  background-color: white;
 }
