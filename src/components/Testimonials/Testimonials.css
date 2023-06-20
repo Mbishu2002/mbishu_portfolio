@@ -1,0 +1,78 @@
+/* Testimonial.css */
+
+#testimonial {
+  padding: 80px 0;
+}
+
+#testimonial h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+#testimonial .testimonial__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#testimonial .testimonial__card .testimonial__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#testimonial .testimonial__card .testimonial__content {
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#testimonial .testimonial__card .testimonial__name {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+/* Slider dots styles */
+#testimonial .testimonial__card .slick-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+#testimonial .testimonial__card .slick-dots li {
+  margin: 0 5px;
+}
+
+#testimonial .testimonial__card .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#testimonial .testimonial__card .slick-dots li.slick-active button {
+  background-color: var(--color-accent);
+}
