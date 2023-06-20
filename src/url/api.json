@@ -1,0 +1,5 @@
+{
+    "testimonials":"https://mbishu.pythonanywhere.com/api/v1.0/testimonials/",
+    "projects":"https://mbishu.pythonanywhere.com/api/v1.0/projects/",
+    "experience":"https://mbishu.pythonanywhere.com/api/v1.0/experience/"
+}
