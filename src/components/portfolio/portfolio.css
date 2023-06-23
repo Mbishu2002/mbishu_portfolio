@@ -66,5 +66,5 @@ h3 {
 }
 
 .card__links a:hover {
-  background-color: var(--color-primary-light);
+  color:black;
 }
